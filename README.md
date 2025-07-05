@@ -136,6 +136,32 @@ Calcula la profundidad máxima de un árbol binario (la longitud del camino más
 **Output esperado:** `4`
 
 ---
+## Funcionamiento de Cada Método
+### Ejercicio 01
+Insertar en un Árbol Binario de Búsqueda (InsertBST.java)
+El método insert(Node root, int value) permite insertar un nuevo valor en un Árbol Binario de Búsqueda (BST).
+Funciona de forma recursiva: compara el valor a insertar con el nodo actual y decide si debe ir a la izquierda (si es menor) o a la derecha (si es mayor). Si el lugar está vacío (nodo nulo), se crea un nuevo nodo con el valor.
+Esto garantiza que el árbol mantenga las propiedades de un BST.
+
+### Ejercicio 02
+Invertir un Árbol Binario (InvertBinaryTree.java)
+El método invertTree(Node root) intercambia los hijos izquierdo y derecho de cada nodo del árbol de forma recursiva.
+Primero invierte los subárboles derecho e izquierdo y luego los asigna al nodo actual en orden inverso.
+Este proceso se repite desde la raíz hasta las hojas, logrando que el árbol quede completamente invertido, es decir, reflejado horizontalmente.
+
+### Ejercicio 03
+Listar niveles en listas enlazadas (ListLevels.java)
+El método listLevels(Node root) recorre el árbol nivel por nivel usando una cola (Queue).
+Por cada nivel, se agrupan los nodos en una lista, simulando una lista enlazada por nivel.
+Esto permite visualizar claramente cómo están organizados los nodos en cada altura del árbol, devolviendo una lista de listas de nodos.
+
+### Ejercicio 04
+Calcular profundidad máxima (Depth.java)
+El método maxDepth(Node root) calcula cuántos niveles tiene el árbol desde la raíz hasta la hoja más profunda.
+Lo hace de forma recursiva, comparando la profundidad de los subárboles izquierdo y derecho en cada paso, y sumando 1 por cada nivel.
+El resultado representa la altura total del árbol.
+
+---
 
 ## Indicaciones Generales
 
